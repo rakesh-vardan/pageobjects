@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AdminLoginPage {
 
-    private final String adminLoginUrl = "https://automatetheworldblog.wordpress.com/wp-admin/";
+    private static final String adminLoginUrl = "https://automatetheworldblog.wordpress.com/wp-admin/";
     private WebDriver driver;
 
     @FindBy(id = "user_login")

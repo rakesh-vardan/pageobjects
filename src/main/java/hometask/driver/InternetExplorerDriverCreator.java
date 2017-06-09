@@ -7,7 +7,6 @@ public class InternetExplorerDriverCreator extends BrowserDriver {
     public WebDriver getBrowserDriver() {
 
         System.setProperty("webdriver.ie.driver", "./src/main/resources/IEDriverServer_v3.4.0.exe");
-        WebDriver driver = new InternetExplorerDriver();
-        return driver;
+        return new InternetExplorerDriver();
     }
 }

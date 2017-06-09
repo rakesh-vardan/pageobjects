@@ -7,7 +7,6 @@ public class ChromeDriverCreator extends BrowserDriver {
 
     public WebDriver getBrowserDriver() {
         System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver_v2.29.exe");
-        WebDriver driver = new ChromeDriver();
-        return driver;
+        return new ChromeDriver();
     }
 }

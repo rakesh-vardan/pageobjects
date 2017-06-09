@@ -12,7 +12,7 @@ import java.util.List;
 
 public class AllPostsPage {
 
-    private final String allPostsUrl = "https://automatetheworldblog.wordpress.com/wp-admin/edit.php";
+    private static final String allPostsUrl = "https://automatetheworldblog.wordpress.com/wp-admin/edit.php";
     private WebDriver driver;
 
     @FindBy(id = "the-list")
@@ -49,13 +49,6 @@ public class AllPostsPage {
         goToParticularPostPage(title);
         DeletePostPage deletePost = PageFactory.initElements(driver, DeletePostPage.class);
         deletePost.delete();
-    }
-
-    public void filterPostsByCategory(String category) {
-    }
-
-    public void searchInPosts(String searchText) {
-
     }
 
     public int getAllPostsCount() {

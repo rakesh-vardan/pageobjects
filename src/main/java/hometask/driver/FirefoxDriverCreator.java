@@ -7,7 +7,6 @@ public class FirefoxDriverCreator extends BrowserDriver{
     public WebDriver getBrowserDriver() {
 
         System.setProperty("webdriver.gecko.driver", "./src/main/resources/geckodriver_v0.16.1.exe");
-        WebDriver driver = new FirefoxDriver();
-        return driver;
+        return new FirefoxDriver();
     }
 }
